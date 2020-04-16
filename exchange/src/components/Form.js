@@ -77,11 +77,11 @@ const Quote = (props) => {
 
   return (
     <div>
-      <h1>Programming Quotes:</h1>
+      <h2>Programming Quotes:</h2>
       {props.isFetching && (
         <Loader type="Grid" color="#00BFFF" height={80} width={120} />
       )}
-      {props.quote && <h3>"{props.quote}"</h3>}
+      {props.quote && <h4>"{props.quote}"</h4>}
       {props.error && <p className="error">{props.error}</p>}
       <button onClick={props.fetchQuote}>Fetch a new quote</button>
     </div>
