@@ -76,10 +76,10 @@ const Quote = (props) => {
   // }
 
   return (
-    <div>
+    <div className="box">
       <h2>Programming Quotes:</h2>
       {props.isFetching && (
-        <Loader type="Grid" color="#00BFFF" height={80} width={120} />
+        <Loader type="Grid" color="#seagreen" height={30} width={30} />
       )}
       {props.quote && <h4>"{props.quote}"</h4>}
       {props.error && <p className="error">{props.error}</p>}
